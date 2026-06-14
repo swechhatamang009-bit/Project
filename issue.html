@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Books</title>
+    <link rel="stylesheet" href="issue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+    <body>
+    <div class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fas fa-book-open"></i>
+        <span>Library Management System</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <div class="menu-label">MENU</div>
+
+        <a href="books.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Books</span>
+        </a>
+
+        <a href="members.html" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Members</span>
+        </a>
+
+        <a href="issue.html" class="nav-item">
+            <i class="fas fa-plus-circle"></i>
+            <span>Issue Books</span>
+        </a>
+
+        <a href="return.html" class="nav-item">
+            <i class="fas fa-undo"></i>
+            <span>Return Books</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+
+        <a href="logout.html" class="nav-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="page-title">
+        <h2>ISSUE BOOKS</h2>
+    </div>
+
+    <div class="card">
+
+        <div class="form-section">
+            <h3>Issue Book</h3>
+
+            <label>Select Member</label>
+            <select>
+                <option>-- Select Member --</option>
+                <option>Laila Khan</option>
+                <option>Justin Bieber</option>
+                <option>Leonardo Di Caprio</option>
+                <option>Christopher Briney</option>
+            </select>
+
+            <label>Select Book</label>
+            <select>
+                <option>-- Select Book --</option>
+                <option>C-Programming</option>
+                <option>Water Supply</option>
+                <option>Statistics & Probability</option>
+                <option>Digital Logic</option>
+            </select>
+
+            <label>Issue Date</label>
+            <input type="date">
+
+            <label>Due Date</label>
+            <input type="date">
+
+            <div class="buttons">
+                <button class="issue-btn">Issue Book</button>
+                <button class="reset-btn" onclick="resetForm()">Reset</button>
+            </div>
+        </div>
+        
+        <div class="table-section">
+            <h3>Issued Books (Recently)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Member</th>
+                        <th>Issue Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>C-Programming</td>
+                        <td>Laila Khan</td>
+                        <td>07 Feb 2025</td>
+                        <td>25 Feb 2025 </td>
+                        <td><span class="status">Issued</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Water Supply</td>
+                        <td>Justin Bieber</td>
+                        <td>14 Feb 2025</td>
+                        <td>29 Feb 2025</td>
+                        <td><span class="status">Issued</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Statistics & Probability</td>
+                        <td>Leonardo Di Caprio</td>
+                        <td>02 May 2025</td>
+                        <td>20 May 2025</td>
+                        <td><span class="status">Issued</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Digital Logic</td>
+                        <td>Christopher Briney</td>
+                        <td>05 May 2025</td>
+                        <td>27 May 2025</td>
+                        <td><span class="status">Issued</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="issue.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="addmem.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fas fa-book-open"></i>
+        <span>Library Management System</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <div class="menu-label">MENU</div>
+
+        <a href="books.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Books</span>
+        </a>
+
+        <a href="members.html" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Members</span>
+        </a>
+
+        <a href="issue.html" class="nav-item">
+            <i class="fas fa-plus-circle"></i>
+            <span>Issue Books</span>
+        </a>
+
+        <a href="return.html" class="nav-item">
+            <i class="fas fa-undo"></i>
+            <span>Return Books</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+
+        <a href="logout.html" class="nav-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </nav>
+</div>
+
+<div class="container">
+  <h2>Add New Member</h2>
+
+  <form>
+
+    <!-- Member ID -->
+    <label>Member ID</label>
+    <input type="text" placeholder="e.g. M001">
+
+    <!-- Full Name -->
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter full name">
+
+    <!-- Email -->
+    <label>Email</label>
+    <input type="email" placeholder="Enter email">
+
+    <!-- Phone -->
+    <label>Phone Number</label>
+    <input type="text" placeholder="Enter phone number">
+
+    <!-- Address -->
+    <label>Address</label>
+    <input type="text" placeholder="Enter address">
+
+    <label>Department</label>
+    <input type="text" placeholder="Faculty">
+
+    <!-- Gender -->
+    <label>Gender</label>
+    <select>
+      <option>Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <!-- Profile Photo -->
+    <label>Profile Photo</label>
+    <input type="file" accept="image/*">
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button type="submit" class="save">Save</button>
+      <button type="reset" class="cancel">Clear</button>
+    </div>
+
+  </form>
+</div>
+<script src="addmem.js"></script>
+  </body>
+</html>
