@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Books Page</title>
+    <link rel="stylesheet" href="return.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fas fa-book-open"></i>
+        <span>Library Management System</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <div class="menu-label">MENU</div>
+
+        <a href="books.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Books</span>
+        </a>
+
+        <a href="members.html" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Members</span>
+        </a>
+
+        <a href="issue.html" class="nav-item">
+            <i class="fas fa-plus-circle"></i>
+            <span>Issue Books</span>
+        </a>
+
+        <a href="return.html" class="nav-item">
+            <i class="fas fa-undo"></i>
+            <span>Return Books</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+
+        <a href="logout.html" class="nav-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </nav>
+</div>
+
+<div class="wrapper">
+    <div class="card">
+
+        <div class="card-top">
+            <h3>Return Books</h3>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by book or member..."
+            >
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Book</th>
+                    <th>Member</th>
+                    <th>Issue Date</th>
+                    <th>Due Date</th>
+                    <th>Fine</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookTable">
+                <tr>
+                    <td>1</td>
+                    <td>C-Programming</td>
+                    <td>Hannah Wells</td>
+                    <td>06 May 2025</td>
+                    <td>20 May 2025</td>
+                    <td class="fine">Rs.30</td>
+                    <td><button class="return-btn">Return</button></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Web-Technology</td>
+                    <td>David Rai</td>
+                    <td>09 June 2025</td>
+                    <td>27 June 2025</td>
+                    <td class="fine">Rs.25</td>
+                    <td><button class="return-btn">Return</button></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Multimedia</td>
+                    <td>Ram Khan</td>
+                    <td>04 May 2025</td>
+                    <td>20 May 2025</td>
+                    <td class="fine">Rs.20</td>
+                    <td><button class="return-btn">Return</button></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Microprocessor</td>
+                    <td>Conrad Fisher</td>
+                    <td>03 May 2025</td>
+                    <td>20 May 2025</td>
+                    <td class="fine">Rs.15</td>
+                    <td><button class="return-btn">Return</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table-footer">
+            <p>Showing 1 to 4 of 4 entries</p>
+
+            <div class="pagination">
+                <button>Previous</button>
+                <button class="active">1</button>
+                <button>Next</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="return.js"></script>
+</body>
+</html>
