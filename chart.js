@@ -36,3 +36,39 @@ display:false
 }
 }
 );
+const activities = [
+    {
+        icon: "📚",
+        text: "Simon Tamang borrowed Chemistry",
+        time: "10 minutes ago"
+    },
+    {
+        icon: "↩️",
+        text: "John Rai returned Physics",
+        time: "30 minutes ago"
+    },
+    {
+        icon: "👤",
+        text: "New member registered",
+        time: "1 hour ago"
+    },
+    {
+        icon: "📖",
+        text: "Java Programming book added",
+        time: "2 hours ago"
+    }
+];
+
+const activityList = document.getElementById("activity-list");
+
+activities.forEach(activity => {
+    activityList.innerHTML += `
+        <div class="activity-item">
+            <span class="icon">${activity.icon}</span>
+            <div>
+                <p>${activity.text}</p>
+                <small>${activity.time}</small>
+            </div>
+        </div>
+    `;
+});
