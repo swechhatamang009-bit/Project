@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fas fa-book-open"></i>
+        <span>Library Management System</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <div class="menu-label">MENU</div>
+
+        <a href="books.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Books</span>
+        </a>
+
+        <a href="members.html" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Members</span>
+        </a>
+
+        <a href="issue.html" class="nav-item">
+            <i class="fas fa-plus-circle"></i>
+            <span>Issue Books</span>
+        </a>
+
+        <a href="return.html" class="nav-item">
+            <i class="fas fa-undo"></i>
+            <span>Return Books</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+
+        <a href="logout.html" class="nav-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </nav>
+</div>
+  
+   <div class="main">
+
+        <div class="top-bar">
+            <h1>Settings</h1>
+            <p>Manage your library information and system preferences.</p>
+        </div>
+
+        <!-- Library Information -->
+        <div class="card">
+
+            <h2>
+                <i class="fa-solid fa-building"></i>
+                Library Information
+            </h2>
+
+            <div class="form-grid">
+
+                <div>
+                    <label>Library Name</label>
+                    <input type="text" value="Central Library">
+                </div>
+
+                <div>
+                    <label>Phone Number</label>
+                    <input type="text" value="+977 9891234567">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" value="library@email.com">
+                </div>
+
+                <div>
+                    <label>Opening Hours</label>
+                    <input type="text" value="8:00 AM - 5:00 PM">
+                </div>
+
+            </div>
+
+            <label>Address</label>
+
+            <textarea rows="3">Kakkarbhitta, Jhapa</textarea>
+
+            <button class="btn">
+                Save Changes
+            </button>
+
+        </div>
+
+        <!-- Account Settings -->
+        <div class="card">
+
+            <h2>
+                <i class="fa-solid fa-user"></i>
+                Account Settings
+            </h2>
+
+            <div class="form-grid">
+
+                <div>
+                    <label>Username</label>
+                    <input type="text" value="admin">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" value="admin@email.com">
+                </div>
+
+                <div>
+                    <label>New Password</label>
+                    <input type="password">
+                </div>
+
+                <div>
+                    <label>Confirm Password</label>
+                    <input type="password">
+                </div>
+
+            </div>
+
+            <button class="btn">
+                Update Password
+            </button>
+
+        </div>
+
+        <!-- System Settings -->
+        <div class="card">
+
+            <h2>
+                <i class="fa-solid fa-sliders"></i>
+                System Settings
+            </h2>
+
+            <div class="form-grid">
+
+                <div>
+                    <label>Maximum Books</label>
+                    <input type="number" value="5">
+                </div>
+
+                <div>
+                    <label>Borrow Days</label>
+                    <input type="number" value="14">
+                </div>
+
+                <div>
+                    <label>Fine Per Day</label>
+                    <input type="number" value="10">
+                </div>
+
+                <div>
+                    <label>Currency</label>
+                    <input type="text" value="NPR">
+                </div>
+
+            </div>
+
+            <button class="btn">
+                Save Settings
+            </button>
+
+        </div>
+
+        <!-- Notifications -->
+        <div class="card">
+
+            <h2>
+                <i class="fa-solid fa-bell"></i>
+                Notification Settings
+            </h2>
+
+            <div class="switch-box">
+
+                <label>
+                    <input type="checkbox" checked>
+                    Email Notifications
+                </label>
+
+                <label>
+                    <input type="checkbox" checked>
+                    Due Date Reminder
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    SMS Notifications
+                </label>
+
+            </div>
+
+            <button class="btn">
+                Save Preferences
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>
